@@ -8,11 +8,16 @@ function asigarTextoElemento (elemento, texto) {
 
 function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
-    console.log(typeof(numeroDeUsuario));
-    console.log(numeroSecreto);
-    console.log(typeof(numeroSecreto));
-    console.log(numeroDeUsuario);
-    console.log(numeroDeUsuario === numeroSecreto);
+    
+    if (numeroDeUsuario === numeroSecreto) {
+        asigarTextoElemento('p', 'Acertaste el número'); 
+    } else {
+        if (numeroDeUsuario > numeroSecreto) {
+            asigarTextoElemento('p', 'El número secreto es menor');
+        } else {
+            asigarTextoElemento('p', 'El número secreto es mayor');
+        }
+    }
     return;
 }
 
