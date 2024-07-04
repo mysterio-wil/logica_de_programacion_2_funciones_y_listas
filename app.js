@@ -49,7 +49,6 @@ function generarNumeroSecreto() {
         } else {
             listaNumerosSorteados.push(numeroGenerado); 
             return numeroGenerado;
-
         }
     }
 }
@@ -69,9 +68,7 @@ function reiniciarJuego() {
     condicionesIniciales();
     //Dehabilitar el boto de nuevo juego
     //document.getElementById('reiniciar').setAttribute('disabled', true);
-    document.querySelector('#reiniciar').setAttribute('disabled', 'true');
-
-
+    document.querySelector('#reiniciar').setAttribute('disabled', 'true')
 }
 
 condicionesIniciales();
